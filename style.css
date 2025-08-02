@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: grey;
+    color: #222;
+    padding: 6px;
+}
+em{
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+.body {
+    max-width: 1200px;
+    margin: 0px auto;
+    ()padding: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    font-family: Poppins;
+}
+
+.navbar h6 {
+    font-size: 2.1em;
+    color: black;
+    font-weight: 160px;
+}
+.nav-links {
+    display: flex;
+    gap: 19px;
+    font-size: 28px;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+    padding-top: 100px;
+}
+.myskills h2 {
+  font-size: 50px;
+}
+.myskills a {
+    font-size: 22px;
+    gap: 33px;
+    display: inline-block;
+    padding: 13px 17px;
+    align-items: left;
+    text-decoration: none;
+    border: 2px solid ;
+    border-radius: 20px;
+}
+.myskills .a:hover:{
+  color: black;
+  transition: ease 2;
+}
+.email{
+  background-color: #000080;
+  border: 2px solid;
+  border-radius: 8px;
+  color: white;
+  padding: 0 5px;
+}
+.email:hover{
+  color: red;
+  transition: ease 2;
+}
+.myskills p{
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.myskills {
+    flex: 5;
+    padding-right: 30px;
+}
+.skills img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 170px;
+    flex: 2;
+}
+
+@media (max-width: 750px) {
+    span {
+        display: none;
+    }
+    .nav-links {
+        font-size: 16px;
+        gap: 16px;
+    }
+    .navbar h6 {
+        font-size: 1em;
+    }
+    .myskills a{
+      border: none;
+      flex: 1;
+    }
+    .navbar {
+    flex-direction: column-reverse;
+    }
+    .navbar h2{
+      font-size: 40px;
+    }
+    .navbar h6{
+      font-size: 1em;
+    }
+    .image{
+      order: -1;
+    }
+    .skills {
+    flex-direction: column;
+    text-align: center;
+    }
+  .email{
+  color: purple;;
+  border: none;
+  background-color: transparent;
+  color: none;
+  }
+  .a{
+    color: purple;
+  }
+}
+

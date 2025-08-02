@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer {
+    font-size: 32px;
+    text-align: center;
+    font-family: Arial;
+    background-color: blue;
+    border-top-right-radius:13px ;
+    border-bottom-right-radius:13px ;
+}
+
+header {
+    font-size: 32px;
+    text-align: left;
+    font-family: arial;
+    background-color: blue;
+}
+
+body {
+    background-color: grey;
+    font-family: Sans-Serif;
+    color: black;
+}
+
+.body {
+    padding: 3px;
+}
+
+.hero {
+    background-color: lightblue;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding: 36px 0;
+    text-align: left;
+}
+
+.hero h1,
+.hero h2 {
+    font-family: "Goldman";
+    margin-left: 20px;
+    padding-left: 6px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 100px;
+}
+
+.hero h2 {
+    font-size: 85px;
+}
+
+.body .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.body section {
+    background-color: skyblue;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 15px;
+    width: 45%;
+    min-width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+section p {
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+section a {
+    font-size: 20px;
+    background-color: grey;
+    border: 1px solid black;
+    text-decoration: none;
+    color: blue;
+    border-radius: 3px;
+    padding: 10px 16px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+section a:hover {
+    color: red;
+    transition: color 0.3s ease;
+}
+
+section .screenshots {
+    text-align: left;
+    font-family: Orbitron, sans-serif;
+    font-size: 22px;
+    margin: 20px 0;
+    color: blue;
+    font-weight: bolder;
+}
+
+section .pic {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section .pic img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+
+    .body section {
+        width: 100%;
+    }
+
+    section p {
+        font-size: 20px;
+    }
+
+    section .screenshots {
+        font-size: 18px;
+    }
+
+    section .pic img {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+    footer {
+        font-size: 22px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+}
